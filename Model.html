@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+<head><title>Model1</title>
+<style>
+.p1{font-size:22px}
+.p2{font-size:20px}
+</style>
+</head>
+<body>
+<h1 align="center"> RELATIONAL MODEL AND TYPES OF RELATIONS</h1>
+<h1 align="center"><u>Introduction</u></h1>
+<table align="center" border="2px" border-color="black"><td>
+<img src="https://raw.githubusercontent.com/gulvaibhav20/assets/master/Scaler/Relational_Model/Table.jpg"
+             height="300px" width="300px"><br>
+</td></table>
+<p class="p1">The Relational Model was introduced in 1970 by E.F.Codd.The relational models foundation is a mathematical
+ concept known as a relation.Each relation <b>(table)</b> is represented as a two-dimensional structure composed
+ of intersecting rows and columns.Each row in a relation is called a <b>tuple</b>. Each column represents a 
+<b>attribute</b>. The relaions are related to each other through the sharing of common entity charactertics.
+The relational model also describes a precise set of data manipulation constructs based on advanced mathematical
+concepts. He work was considered ingenious but impractical.<br><br>
+   The relational model's conceptual simplicity was bought at the expence of computer overhead; computers at that
+time lacked the power to implement the relational model. Fortunately, computer power grew exponentially, as did operating
+system efficiency. Better yet, the cost of computers diminished rapidly as their power grew. The relational data model
+is implemented through a very sophisticated <b>Relational Database Management System (RDBMS)</b>. The RDBMS performs the same
+basic functions provided by the hierarchical and network DBMS systems, in addition to a host of other functions that make
+the relational data model easier to understand and implement. The most important advantage of the RDBMS is its ability to
+hide the complexities of relational model from the user. the RDBMS manages all of the physical details, while the user
+sees the relational database as a collection of tabkes in which data is stored. the user can manipulate and the data
+in a way that seems intaitive and logical.The relational model provides a minimum level of controlled redundancy
+to eliminate most of the redundancies commonly found in file systems.</p>
+<h1 align="center"><u>Types of Relations</u></h1>
+<h2>1. ONE-TO-ONE:</h2>
+<table align="center" border="2px" border-color="black"><td>
+<img src="https://phoenixnap.com/kb/wp-content/uploads/2022/07/one-to-one-relationship.png"
+             height="250px" width="400px"><br>
+</td></table>
+<p class="p1">A one-to-one relationship means that for every record in one table (or entity), there's only one
+corresponding record in another table, and the reverse is also true. The above diagram shows that it’s
+mandatory for a capital to have a country and it’s mandatory for a country to have a capital.One-to-one 
+relationships are the least frequent relationship type. One of the reasons for this is that very few 
+one-to-one relationships exist in real life. Also, most one-to-one relationships are one-to-one only for some
+period of time.</p><br>  
+<h2>2. ONE-TO-MANY:</h2>
+<table align="center" border="2px" border-color="black"><td>
+<img src="https://www.datensen.com/blog/wp-content/uploads/2021/10/one-to-many-relationship.png"
+             height="250px" width="400px"><br>
+</td></table>
+<p class="p1">A one-to-many relationship is a fundamental concept in relational database design, where a single
+instance of one entity (or table) is linked to zero, one, or many instances of another entity. <b>Example:</b>
+Consider a "Customers" table and an "Orders" table. Each customer can place many orders, but each order belongs
+to only one customer. This is a one-to-many relationship where "Customers" is the "one" side and "Orders" is 
+the "many" side.  One-to-many often refer to a primary key to foreign key relationship between two tables, 
+where the record in the first table can relate to multiple records in the second table. A foreign key is one 
+side of the relationship that shows a row or multiple rows, with one of those rows being the primary key 
+already listed on the first table.</p><br>
+<h2>3. MANY-TO-MANY:</h2>
+<table align="center" border="2px" border-color="black"><td>
+<img src="https://www.datensen.com/blog/wp-content/uploads/2021/10/many-to-many-relationship-1-1024x261.png"
+             height="250px" width="400px"><br>
+</td></table>
+<p class="p1">A many-to-many relationship occurs when each instance of one entity can be associated with 
+multiple instances of another entity, and vice versa. <b>Example:</b>Consider a database for a school: a 
+student can enroll in many courses, and a course can have many students enrolled. This creates a many-to-many 
+relationship between the "Students" and "Courses" tables.
+<b>How it works:</b>
+You would have a "Students" table with student information, a "Courses" table with course information, and a 
+"StudentCourses" (or similar) join table. 
+The "StudentCourses" table would contain columns for "StudentID" (foreign key referencing the "Students" table)
+and "CourseID" (foreign key referencing the "Courses" table). 
+Each row in the "StudentCourses" table would represent a student enrolled in a particular course.</p><br>
+<h2 align="center">THANK-YOU</h2>
+</body>
+</html>
