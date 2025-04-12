@@ -30,30 +30,28 @@ if a transaction is composed of two UPDATE statements and one INSERT statement, 
 database requests. In turn, each database request genrates several input/output operations that read from or
 write to physical storage media.</p>
 <h2 align="center"><u>Concept Of Processing Transaction</u></h2>
-<pre>
 <p class="p2">To undestand the concept of a transaction, suppose that you sell a product to a customer. Furthermore, suppose that the
 customer may charge the purchase to his or her account. Given that scenario, your sales transaction consists of at least 
-the following parts:
-
+the following parts:</p>
+<pre><p class="p2">
 1. You must write a new customer invoice.
 
 2. You must reduce the quantity on hand in the product's inventory.
 
 3. You must update the account transactions.
 
-4. You must update the customer balance.
-
-     The preceding sales transaction must be reflected in the database. In database terms, a transaction is any action
- that reads from or writes to a database. A transaction may consist of the following:
-
+4. You must update the customer balance.</p></pre>
+<p class="p2">The preceding sales transaction must be reflected in the database. In database terms, a transaction is any action
+ that reads from or writes to a database. A transaction may consist of the following:</p>
+<pre><p class="p2">
 1. A simple SELECT statement to generate a list of table contents.
 
-2. A series of related UPDATE statements to change the values of the attributes in various tables.
+2. A series of related UPDATE statements to change the values of the
+         attributes in various tables.
 
-3. A series f INSERT statements to add rows to one or more tables.
+3. A series of INSERT statements to add rows to one or more tables.
 
 4. A combination of SELECT,UPDATE,and INSERT statements.
-  
 </p></pre> 
 <h2 align="center"><u>Transaction Properties</u></h2>
 <p class="p1">Each individual transaction must display atomicity, consistency, isolation, and durability. These four 
@@ -96,9 +94,8 @@ in which multiple transactions are likely to be executed concurrently. </p>
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwVkGlRSsct87-5AT2MKvyZiVSIetpPHv9Fg&s"
              height="250px" width="350px"><br>
 </td></table>
-<pre>
 <p class="p2" align="center">In conclusion, the transaction processing concept ensures data integrity and consistency by 
 treating a series of operations as a single, indivisible unit of work, governed by the ACID properties.This 
 guarantees that either all operations within a transaction succeed, or none do, preserving the database's
-integrity and reliability.</p></pre> 
+integrity and reliability.</p>
 </body></html>     
