@@ -7,4 +7,5 @@ FAIL: MVI A,00H   ;00 = Fail
       JMP END
 PASS: MVI A,01H   ;01 = Pass
       STA 2051H
+
 END: HLT  
